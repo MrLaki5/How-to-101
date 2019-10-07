@@ -19,7 +19,7 @@
 nano ./flash-all.sh
 ```
 * In editor remove if structure and add ./ before every fastboot command. Example:
-	* From:
+From:
 ``` bash
 	#!/bin/sh
 
@@ -50,7 +50,7 @@ nano ./flash-all.sh
 	fastboot -w update image-bonito-pq3b.190801.002.zip
 ```
 
-	* To:
+To:
 
 ``` bash
 	#!/bin/sh
