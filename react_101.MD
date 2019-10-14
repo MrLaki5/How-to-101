@@ -26,3 +26,9 @@ npm start
 ``` bash
 npm i react-router-dom
 ```
+
+* Material design: simple and responsive deisgned components
+``` bash
+npm install @material-ui/core
+npm install @material-ui/icons
+```
