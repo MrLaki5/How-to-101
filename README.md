@@ -1,4 +1,4 @@
-## Set of 101 files with some maybe usefull commands :)
+## Set of 101 files with some (maybe) usefull commands:
 
 ### Content:
 1. [Docker](docker_101.MD)
