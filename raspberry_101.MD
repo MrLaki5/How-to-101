@@ -87,3 +87,18 @@ sudo groupadd docker
 sudo vi /etc/os-release
 #Edit line with ID=raspbian to ID=debian
 ```
+
+
+### Statistics:
+* Core temp:
+``` bash
+vcgencmd measure_temp
+```
+
+* System diagnostics:
+``` bash
+dmesg [-H] [-T] [-w]
+# -H is humen readable output text
+# -T is human readable time 
+# -w is live changes
+```

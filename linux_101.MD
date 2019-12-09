@@ -4,3 +4,8 @@
 ``` bash
 nano -c <file path>
 ```
+
+* Read logs live:
+``` bash
+tail -f <log path>
+```
