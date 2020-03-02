@@ -9,3 +9,34 @@ nano -c <file path>
 ``` bash
 tail -f <log path>
 ```
+
+* Search through command history:
+``` bash
+CTRL + R # In terminal, after search if there are more similart commands, iteration is posible with pressing CTRL + R again
+```
+
+* New termianl tab: 
+``` bash
+CTRL + SHIFT + T
+```
+
+* Third party solutions:
+``` bash
+tig # Git tree
+terminator # CLI with extra options to split h and w.
+```
+
+* Search through filesystem:
+``` bash
+find <root_path> -iname "<file_name_reg>"
+```
+
+* Check size on disk of filesystem:
+``` bash
+df -h
+```
+
+* Checks remotes for git repo:
+``` bash
+git remote -v
+```
