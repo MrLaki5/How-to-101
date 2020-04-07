@@ -26,6 +26,11 @@ tig # Git tree
 terminator # CLI with extra options to split h and w.
 ```
 
+* Tig all branches:
+``` bash
+tig --all
+```
+
 * Search through filesystem:
 ``` bash
 find <root_path> -iname "<file_name_reg>"
@@ -36,7 +41,17 @@ find <root_path> -iname "<file_name_reg>"
 df -h
 ```
 
+* Recursive all folders to depth (-d) and their sizes:
+``` bash
+du -h /path/to/directory -d 1
+```
+
 * Checks remotes for git repo:
 ``` bash
 git remote -v
+```
+
+* Go back to previous dir location:
+``` bash
+cd -
 ```

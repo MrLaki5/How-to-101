@@ -24,7 +24,7 @@ docker-compose -f <path to docker compose file> up [-d]
 
 * Run container from clean image with terminal attached to it:
 ``` bash
-docker run -ti <image name> /bin/sh
+docker run -ti <image name> /bin/bash
 ```
 
 
