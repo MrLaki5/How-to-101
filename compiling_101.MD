@@ -1,4 +1,4 @@
-## Create share librarie:
+## Create share library:
 ``` bash
 # Build object for shared library
 g++ -c -fpic foo.c
