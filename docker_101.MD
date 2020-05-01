@@ -76,12 +76,15 @@ docker rm <container name>
 
 * Remove all containers that are stopped:
 ``` bash
-docker rm $(docker ps -a)
+docker rm $(docker ps -aq)
 ```
 
 * Remove docker image that is not used by any container:
 ``` bash
 docker rmi <container image name>
+
+# Remove all untagged images:
+docker rmi $(docker images -f "dangling=true" -q)
 ```
 
 * Remove all docker images that are not used by any containers:
