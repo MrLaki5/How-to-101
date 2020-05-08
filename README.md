@@ -10,3 +10,4 @@
 7. [Neural networks](neural_networks101.MD)
 8. [C++ compiling shared liraries](compiling_101.MD)
 9. [Git](git.MD)
+10. [Python envirements](python_envirement.MD)
