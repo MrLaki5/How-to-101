@@ -1,4 +1,5 @@
 ## Usefull docker instructions:
+* Docker containers itself are set of process isolation rules done through namespacing and control groups on linux os. Docker on windows and osx has linux VM in background. They have specific filesystem and start commands that are aquired from docker images.
 
 
 
@@ -15,6 +16,7 @@ docker ps [-a]
 ```
 
 
+
 ### Starting:
 * Run docker compose and create containers
 ``` bash
@@ -22,9 +24,17 @@ docker-compose -f <path to docker compose file> up [-d]
 # -d is used for deattached mode
 ```
 
-* Run container from clean image with terminal attached to it:
+* Run container (create and start) from clean image with terminal attached to it:
 ``` bash
-docker run -ti <image name> /bin/bash
+docker run -it <image name> /bin/bash
+# -i: used to connect out terminal with standard input of linux process in wich out container is run
+# -t: format text that is going (i/o)
+```
+
+* Start stopped container
+``` bash
+docker start [-a] <container id>
+# -a: attached mode, to see logs of container
 ```
 
 
@@ -38,7 +48,8 @@ docker exec <container name> <command>
 * Attach to container and run commands:
 ``` bash
 docker exec -it <container name> bash
-# To leave attached container use:
+# -i: used to connect out terminal with standard input of linux process in wich out container is run
+# -t: format text that is going (i/o)
 exit
 ```
 
@@ -56,6 +67,11 @@ docker logs [-f] <container name>
 docker stop <container name>
 ```
 
+* Killing running container without extra time for stopping:
+``` bash
+docker kill <container name>
+```
+
 * Stop all running containers:
 ``` bash
 docker stop $(docker ps)
@@ -69,6 +85,11 @@ docker-compose -f <path to docker compose> stop
 
 
 ### Removing:
+* Remove all containers and images:
+``` bash
+docker system prune
+```
+
 * Remove stopped container:
 ``` bash
 docker rm <container name>

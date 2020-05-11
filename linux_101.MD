@@ -23,6 +23,7 @@ CTRL + SHIFT + T
 * Third party solutions:
 ``` bash
 tig # Git tree
+nethogs # Network traffic
 terminator # CLI with extra options to split h and w.
 ```
 
