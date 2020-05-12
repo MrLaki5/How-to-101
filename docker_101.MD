@@ -148,3 +148,18 @@ docker-machine create --driver virtualbox <machine name>
 ``` bash
 docker-machine create --driver generic --generic-ip-address <device ip address> --generic-ssh-user <username on device> --generic-ssh-key <path to ssh key> --engine-storage-driver overlay2 <machine name>
 ```
+
+
+
+### Building image:
+* Building image from dockerfile:
+``` bash
+docker build -t <image name (see convention below)> <path to dockerfile>
+# Name convention when building custom images: <Docker id>/<Project name>:<version>
+```
+
+* Building image from container:
+``` bash
+docker commit -c <default command> <Running container ID>
+# Default command will be done when container is started from image we are creating. eg: 'CMD ["echo Hello world!"]'
+```
