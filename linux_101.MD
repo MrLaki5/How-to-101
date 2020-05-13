@@ -56,3 +56,13 @@ git remote -v
 ``` bash
 cd -
 ```
+
+* GRUB boot package loader (eg. kernel siwtching):
+``` bash
+# Modify grub configuration:
+sudo nano /etc/default/grub
+sudo update-grub
+
+# Open grub loader on boot time:
+# Press and hold <shift key> while booting, in case of UEFI press and hold <escape key>
+```
