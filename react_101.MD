@@ -19,6 +19,24 @@ npm i <package name>
 npm start
 ```
 
+### Install on linux:
+``` bash
+# install NVM (version manager for node)
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
+bash install_nvm.sh
+
+# refresh terminal profile
+source ~/.profile
+
+# list all node version that can be installed
+nvm ls-remote
+
+# pick one version and install (replace X with version)
+nvm install X
+
+# use installed version (replace X with version)
+nvm use X
+```
 
 
 ### Usefull dependencies:
