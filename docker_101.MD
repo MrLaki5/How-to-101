@@ -160,6 +160,7 @@ docker build -t <image name (see convention below)> <path to dockerfile>
 
 * Building image from container:
 ``` bash
+# Make sure private key is added to ssh-agent and that publick key is copied to targeted device.
 docker commit -c <default command> <Running container ID>
 # Default command will be done when container is started from image we are creating. eg: 'CMD ["echo Hello world!"]'
 ```
