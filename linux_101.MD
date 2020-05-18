@@ -32,9 +32,19 @@ terminator # CLI with extra options to split h and w.
 tig --all
 ```
 
-* Search through filesystem:
+* Search through filesystem for specific file:
 ``` bash
 find <root_path> -iname "<file_name_reg>"
+```
+
+* Search through filesystem for specific text in files:
+``` bash
+grep -rnw '<root_path>' -e '<text_to_find>'
+# -n: prints line number where text occured
+# -r|R: recursive
+# -w: match the whole word
+# -l: for giving just names of matching files
+# 2> /dev/null: move error out, so permission denied messages are not shown
 ```
 
 * Check size on disk of filesystem:
