@@ -67,6 +67,20 @@ git remote -v
 cd -
 ```
 
+* Get process started with specific command:
+``` bash
+ps aux | grep -i "<part of command>"
+```
+
+* Kill process:
+``` bash
+# Lite version
+kill <pid>
+
+# Hard version
+kill -Kill <pid>
+```
+
 * GRUB boot package loader (eg. kernel siwtching):
 ``` bash
 # Modify grub configuration:
