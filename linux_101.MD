@@ -25,6 +25,7 @@ CTRL + SHIFT + T
 tig # Git tree
 nethogs # Network traffic
 terminator # CLI with extra options to split h and w.
+timeshift # mechanism for saving state's of current system (backups if something goes wrong)
 ```
 
 * Tig all branches:
