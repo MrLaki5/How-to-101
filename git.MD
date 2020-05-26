@@ -8,6 +8,11 @@ git reset --soft <commit where branch is going from mother branch> # This will m
 git add -A && git commit -m "commit message goes here"
 ```
 
+* Difference between two commits:
+``` bash
+git diff <commit1 hash> <commit2 hash>
+```
+
 * Add git tree in git configuration:
 ``` bash
 [alias]
