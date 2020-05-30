@@ -28,3 +28,8 @@ c++filt <undefined symbol>
 nm  [-C] <path to shared lib>
 # -C: will show damaged symbols
 ```
+
+## Disassemble binary executable:
+``` bash
+objdump -d <path to elf file>
+```
