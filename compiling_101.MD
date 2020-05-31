@@ -29,7 +29,11 @@ nm  [-C] <path to shared lib>
 # -C: will show damaged symbols
 ```
 
-## Disassemble binary executable:
+## ELF manipulation:
 ``` bash
+# Disassemble binary executable:
 objdump -d <path to elf file>
+
+# Strip all labels inside binary:
+strip --strip-unneeded <path to elf file>
 ```
