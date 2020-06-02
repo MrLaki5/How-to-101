@@ -31,7 +31,10 @@ nm  [-C] <path to shared lib>
 
 ## ELF manipulation:
 ``` bash
-# Disassemble binary executable:
+# Segments info (readelf is architecture independent):
+readelf -s
+
+# Disassemble binary executable (objdump is architecture dependent):
 objdump -d <path to elf file>
 
 # Strip all labels inside binary:
