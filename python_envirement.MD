@@ -2,25 +2,25 @@
 
 ### Install needed modules:
 ``` Bash
-	pip3 install virtualenv
+pip3 install virtualenv
 ```
 
 ### Make directory for virtual envirements:
 ``` Bash
-	mkdir python-virtual-envirements && cd python-virtual-envirements
+mkdir python-virtual-envirements && cd python-virtual-envirements
 ```
 
 ### Make virutal envirement:
 ``` Bash
-	python3 -m venv NameOfEnvirement
+python3 -m venv NameOfEnvirement
 ```
 
 ### Use envirement:
 ``` Bash
-	source ./NameOfEnvirement/bin/activate
+source ./NameOfEnvirement/bin/activate
 ```
 
 ### Stop using envirement:
 ``` Bash
-	deactivate
+deactivate
 ```
