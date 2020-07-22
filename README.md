@@ -11,3 +11,4 @@
 8. [C++ compiling shared liraries](compiling_101.MD)
 9. [Git](git.MD)
 10. [Python envirements](python_envirement.MD)
+11. [Gstreamer](gstreamer_101.MD)
