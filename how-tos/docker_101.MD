@@ -164,3 +164,17 @@ docker build -t <image name (see convention below)> <path to dockerfile>
 docker commit -c <default command> <Running container ID>
 # Default command will be done when container is started from image we are creating. eg: 'CMD ["echo Hello world!"]'
 ```
+
+
+
+
+### Docker file construction:
+* Copy command with from argument can be used in case where two separate dockerfile images are used merged in one new (where one is used in FROM and other in this COPY).
+``` bash
+COPY --from=<name|index> <src> <dest>
+# name: name of docker image from dockerhub
+# index: release number of docker image
+# src: content that will be copied from given image (for whole image use /)
+# dest: place where content will be copied in new docker container
+# Note: if case where two images are being merged is used, it's best to make sure two images have same origin and to use src: / and dest /
+```
