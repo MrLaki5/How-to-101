@@ -1,4 +1,4 @@
-## Intructions for unzipping and after that zipping and signing android app:
+## Instructions for unzipping and after that zipping and signing android app:
 
 
 * Apktool can be downloaded from [here](https://ibotpeaches.github.io/Apktool/install/)
