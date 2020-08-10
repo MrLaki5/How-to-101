@@ -12,3 +12,4 @@
 9. [Git](how-tos/git.MD)
 10. [Python envirements](how-tos/python_envirement.MD)
 11. [Gstreamer](how-tos/gstreamer_101.MD)
+12. [Android apk signing](how-tos/android_app_zip_unzip.MD)
