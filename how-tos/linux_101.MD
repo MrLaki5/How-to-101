@@ -48,6 +48,11 @@ grep -rnw '<root_path>' -e '<text_to_find>'
 # 2> /dev/null: move error out, so permission denied messages are not shown
 ```
 
+* Search through filesystem for specific text in ELF:
+``` bash
+grep -Hrin "haveImageReader" <path_to_lpdnn>
+```
+
 * Check size on disk of filesystem:
 ``` bash
 df -h
