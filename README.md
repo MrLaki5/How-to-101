@@ -13,3 +13,4 @@
 10. [Python envirements](how-tos/python_envirement.MD)
 11. [Gstreamer](how-tos/gstreamer_101.MD)
 12. [Android apk signing](how-tos/android_app_zip_unzip.MD)
+13. [MAC changer](how-tos/mac_changer_101.MD)
