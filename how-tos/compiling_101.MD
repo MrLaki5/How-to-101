@@ -40,3 +40,27 @@ objdump -d <path to elf file>
 # Strip all labels inside binary:
 strip --strip-unneeded <path to elf file>
 ```
+
+## Debug program:
+* Set flags in cmake:
+``` bash
+set(CMAKE_BUILD_TYPE Debug)
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -O0")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O0")
+```
+* Build program with edited cmake
+* Run program with gdb:
+``` bash
+gdb --args <Run program command>
+```
+* Inside gdb commands:
+``` bash
+# Start execution:
+run
+
+# Show more info about crash:
+bt
+
+# Quit:
+quit
+```
