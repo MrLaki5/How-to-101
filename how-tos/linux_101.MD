@@ -96,3 +96,9 @@ sudo update-grub
 # Open grub loader on boot time:
 # Press and hold <shift key> while booting, in case of UEFI press and hold <escape key>
 ```
+
+* Run process on specific processor cores:
+``` bash
+taskset -c <core number> <start process command>
+# <core number>: can be specific number of core (etc. 0), or range of cores (etc. 1-4)
+```
