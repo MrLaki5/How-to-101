@@ -14,3 +14,4 @@
 11. [Gstreamer](how-tos/gstreamer_101.MD)
 12. [Android apk signing](how-tos/android_app_zip_unzip.MD)
 13. [MAC changer](how-tos/mac_changer_101.MD)
+14. [Rust](how-tos/rust_101.MD)
