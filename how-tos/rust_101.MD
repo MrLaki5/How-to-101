@@ -97,4 +97,18 @@ cargo doc --open
 
 * match: statement for patern match
 
+### Owenership
 
+* Memory allocated on heap has its variable owner, when this variable gets out of scope memory gets freed.
+
+* Doing copy of variable that has heap part makes variable that is beeing copied not valid anymore (there is no shallow copy, just move)
+
+* For deep copy use .clone() on copy statement
+
+* Function arguments and results also have same effect as copy of variables
+
+* Borrowing (references) is way to pass argument to function without copy of variables
+
+* There can only be one mutable or multiple imutable references in one sequence of access to those references (if we have imutable reference, last referenced before creation of mutable, this code is OK). This exists due to data race conditions
+
+* Slices are references but to part of heap memory
