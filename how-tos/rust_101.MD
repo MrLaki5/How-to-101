@@ -81,6 +81,8 @@ cargo doc --open
 
 * shadowing can be done in same block, where new definition of variable with same name shadows the prev one
 
+* Expression with semicolon on end is statement
+
 ### Functions
 
 * Associated function => static method
