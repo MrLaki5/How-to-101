@@ -112,3 +112,14 @@ cargo doc --open
 * There can only be one mutable or multiple imutable references in one sequence of access to those references (if we have imutable reference, last referenced before creation of mutable, this code is OK). This exists due to data race conditions
 
 * Slices are references but to part of heap memory
+
+### Project structure
+
+* Package is one or more crates that provide set of functionallity. It has Cargo.toml file that describes how to build those crates. It must contain zero or one library crate and zaro or many binary crates, but it has to have one crate minimum.
+
+* Crate is binary (src/main.rs) or library (src/lib.rs), it has root module.
+
+* Module are parts of crate that give us ability to organize crate. They have privacy options for internal (private) or external (public) possibility to use.
+
+* Path is referencing some funcrion or variable that is in modules structure. It can be relative or absolute. Its syntax is like: module::sub_module::function
+
