@@ -123,3 +123,18 @@ cargo doc --open
 
 * Path is referencing some funcrion or variable that is in modules structure. It can be relative or absolute. Its syntax is like: module::sub_module::function
 
+### Error handling
+
+* Two types of errors are: recovarable and unrecovarable
+
+* Errors called with panic! are not recovarable and on them stack will be unwind (function by function) and application quit with error printed
+
+* There is way to skip stack unwind (helps to make aplication smaller and quicker on panic!) and to leave memory clearning to OS
+``` bash
+# Inside cargo.toml under profile add:
+[profile.release]
+panic = 'abort'
+```
+
+
+
