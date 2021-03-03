@@ -136,5 +136,22 @@ cargo doc --open
 panic = 'abort'
 ```
 
+### Generics, traits, lifetimes
+
+* monomorphization: compile time code filling up (process of switching generics with solid types)
+
+* traits: something similar to interfaces (tell compiler what functionalities specific type can do)
+
+* blanket implementations: when trait implements second trait, then every type that implements trait can use second trait
+
+* function lifetime: lifetime of the reference returned by the function is the same as the smaller of the lifetimes of the references passed in
+
+* lifetime elision rules: set of compiler rules in which lifetime specification is not needed
+** There are 3 rules and after compiler applys them, if there are left references with no lifetime, error will be thrown:
+    1. Each parameter that is a reference gets its own lifetime parameter
+
+    2. If there is exactly one input lifetime parameter, that lifetime is assigned to all output lifetime parameters
+
+    3. If there are multiple input lifetime parameters, but one of them is &self or &mut self (method) the lifetime of self is assigned to all output lifetime parameters
 
 
