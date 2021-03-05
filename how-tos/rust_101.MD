@@ -70,6 +70,16 @@ cargo check
 cargo doc --open
 ```
 
+* Cargo run tests
+``` bash
+cargo test [binary arguments] [-- [test arguments]]
+
+# Run tests in one thread (not thread per test)
+cargo test -- --test-threads=1
+
+# Test outputs show only if test fails, show test output even on test passed:
+cargo test -- --show-output
+```
 
 ## Syntax
 
