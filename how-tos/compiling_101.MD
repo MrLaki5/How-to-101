@@ -67,7 +67,7 @@ quit
 
 ## Debug for memory leaks:
 ``` bash
-valgrind --leak-checker=full <Run program command>
+valgrind --leak-check=full <Run program command>
 # On end valgrind will print all allocations and frees that program did and stack trace where not deallocated malloc happened
 ```
 
