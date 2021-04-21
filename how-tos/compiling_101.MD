@@ -27,6 +27,12 @@ c++filt <undefined symbol>
 # List symbols used in shared lib:
 nm  [-C] <path to shared lib>
 # -C: will show damaged symbols
+
+# Check if specific lib has specific function
+nm --demangle <lib path> | grep -n -e '<function name>'
+# --demangle: remove additional function name characters
+# -n: print line
+# Note: this will print whole line with number of it
 ```
 
 ## ELF manipulation:
