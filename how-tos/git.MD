@@ -19,3 +19,15 @@ git diff <commit1 hash> <commit2 hash>
 lg1 = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
 tree = !"git lg1"
 ```
+
+* Clen repo:
+``` bash
+# From all untracked files
+git clean -fd
+
+# From all tracked changed files
+git reset --hard
+
+# From all staged tracked files
+git reset
+```
