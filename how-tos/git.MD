@@ -25,9 +25,9 @@ tree = !"git lg1"
 # From all untracked files
 git clean -fd
 
-# From all tracked changed files
+# From all tracked files
 git reset --hard
 
-# From all staged tracked files
-git reset
+# Specific tracked file
+git checkout <commit id> -- <file path>
 ```
