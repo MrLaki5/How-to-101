@@ -20,6 +20,11 @@ lg1 = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C
 tree = !"git lg1"
 ```
 
+* Add email to gitrepo:
+``` bash
+git config user.email <users email>
+```
+
 * Clen repo:
 ``` bash
 # From all untracked files
