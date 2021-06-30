@@ -15,3 +15,4 @@
 12. [Android apk signing](how-tos/android_app_zip_unzip.MD)
 13. [MAC changer](how-tos/mac_changer_101.MD)
 14. [Rust](how-tos/rust_101.MD)
+15. [Cuda](how-tos/cuda_101.MD)
