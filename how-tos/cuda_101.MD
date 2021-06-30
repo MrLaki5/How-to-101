@@ -105,4 +105,4 @@ someKernel<<<number_of_blocks, threads_per_block, 0, stream>>>(); // Stream is p
 
 cudaStreamDestroy(stream); // Note that a value, not a pointer, is passed to cudaDestroyStream
 ```
-Nsight Systems: application for visually profiling the timeline of GPU-accelerated CUDA applications.
+* Nsight Systems: application for visually profiling the timeline of GPU-accelerated CUDA applications.
