@@ -91,4 +91,18 @@ cudaMemPrefetchAsync(pointerToSomeUMData, size, deviceId);
 // Prefetch to CPU device. cudaCpuDeviceId is built in cuda variable
 cudaMemPrefetchAsync(pointerToSomeUMData, size, cudaCpuDeviceId);
 ```
+* Stream: series of commands that execute in order. There are two types of streams default stream and non-default created streams.
+* Stream rules: 
+                1. Operations within a given stream occur in order.
+                2. Operations in different non-default streams are not guaranteed to operate in any specific order relative to each other.
+                3. The default stream is blocking and will both wait for all other streams to complete before running, and, will block other streams from running until it completes.
+* Cuda stream is forth argument: (3rd argument of the execution configuration allows programmers to supply the number of bytes in shared memory to be dynamically allocated per block for this kernel launch, default is 0):
+``` c++
+cudaStream_t stream;       // CUDA streams are of type cudaStream_t
+cudaStreamCreate(&stream); // Note that a pointer must be passed to cudaCreateStream
 
+someKernel<<<number_of_blocks, threads_per_block, 0, stream>>>(); // Stream is passed as 4th EC argument
+
+cudaStreamDestroy(stream); // Note that a value, not a pointer, is passed to cudaDestroyStream
+```
+Nsight Systems: application for visually profiling the timeline of GPU-accelerated CUDA applications.
